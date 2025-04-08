@@ -65,7 +65,7 @@ export default function LoginPage() {
           </div>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-white font-medium">
                 Email address
               </label>
@@ -73,14 +73,14 @@ export default function LoginPage() {
                 id="email"
                 type="email"
                 placeholder="Enter your email address"
-                className="w-full rounded-md border border-gray-700 bg-transparent p-2 text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none"
+                className="w-full h-12 rounded-md border border-gray-700 bg-transparent p-2 text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <label htmlFor="password" className="text-white font-medium">
                 Password
               </label>
@@ -89,7 +89,7 @@ export default function LoginPage() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
-                  className="w-full rounded-md border border-gray-700 bg-transparent p-2 text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none"
+                  className="w-full h-12 rounded-md border border-gray-700 bg-transparent p-2 text-white placeholder-gray-500 focus:border-purple-500 focus:outline-none"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -110,7 +110,7 @@ export default function LoginPage() {
 
             <Button 
               type="submit"
-              className="mt-2 rounded-md bg-purple-500 p-2 font-medium text-white hover:bg-purple-600 disabled:opacity-70"
+              className="mt-2 h-12 rounded-md bg-purple-500 p-2 font-medium text-white hover:bg-purple-600 disabled:opacity-70"
               disabled={isLoading}
             >
               {isLoading ? (
@@ -126,7 +126,7 @@ export default function LoginPage() {
             <Button
               type="button"
               variant="outline"
-              className="flex items-center justify-center rounded-md bg-white p-2 font-medium text-gray-800 hover:bg-gray-100"
+              className="h-12 flex items-center justify-center rounded-md bg-white p-2 font-medium text-gray-800 hover:bg-gray-100"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" className="mr-2">
                 <path
